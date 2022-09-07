@@ -1,0 +1,51 @@
+:root {
+    --colorWhite: #fff;
+    --colorPlatinum: #e8ebe4;
+    --colorGray: #bec1bb;
+    --colorBlueBell: #a491d2;
+    --colorSoap: #cdc3e6;
+    --colorPaleLavender: #d4dcff;
+    --colorDarkJungle: #1b1f21;
+    --colorOuterSpace: #444749;
+    --colorOldSilver: #828485;
+    --fontTitles: "Poppins", sans-serif;
+    --fontParagraphs: "Open Sans", sans-serif;
+    --textLarge: font-size: 4.5rem;
+    --textMedium: font-size: 1.6rem;
+    --textSmall: font-size: 1.4rem;
+    --textXsmall: font-size: 1rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 65.5%; /* 10px = 1rem */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: var(--fontParagraphs);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fontTitles);
+  color: var(--colorDarkJungle);
+  margin: 0;
+  padding: 0;
+}
+
+.btn-primary {
+    background-color: var(--colorBlueBell);
+    padding: 3.2rem 9.5rem;
+    color: var(--colorWhite);
+}
