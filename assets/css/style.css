@@ -18,7 +18,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 65.5%; /* 10px = 1rem */
+  font-size: 64%; /* 10px = 1rem */
   scroll-behavior: smooth;
 }
 
@@ -45,6 +45,15 @@ h4 {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: var(--colorDarkJungle);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 p {
   padding: 0;
   margin: 0;
@@ -61,6 +70,7 @@ body {
   display: flex;
 }
 
+/* Right pannel --------------------------------------- */
 body .rightPannel {
   flex-grow: 2;
   display: flex;
@@ -90,4 +100,63 @@ body .rightPannel .rightPannel__info p {
 
 body .rightPannel .rightPannel__info p span {
   font-weight: bold;
+}
+
+/* Left pannel --------------------------------------- */
+body .leftPannel {
+  flex-grow: 2;
+}
+body .leftPannel .leftPannel__profile {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid var(--colorGray);
+}
+body .leftPannel .leftPannel__profile .leftPannel__profile-imgTitle {
+  display: flex;
+  align-items: center;
+}
+
+body .leftPannel .leftPannel__profile .leftPannel__profile-imgTitle img {
+  width: 5rem;
+  border: 2px solid var(--colorGray);
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+
+body
+  .leftPannel
+  .leftPannel__profile
+  .leftPannel__profile-imgTitle
+  .leftPannel__profile-imgTitle-title
+  a {
+  font-size: var(--textSmall);
+}
+
+body
+  .leftPannel
+  .leftPannel__profile
+  .leftPannel__profile-imgTitle
+  .leftPannel__profile-imgTitle-title
+  p {
+  font-size: var(--textXsmall);
+}
+
+body .leftPannel .leftPannel__profile .leftPannel__profile-icons {
+  display: flex;
+  align-items: center;
+}
+
+body .leftPannel .leftPannel__profile .leftPannel__profile-icons img {
+  height: 1.8rem;
+  margin-right: 1rem;
+}
+
+body
+  .leftPannel
+  .leftPannel__profile
+  .leftPannel__profile-icons
+  img:last-of-type {
+  margin-right: 0rem;
 }
