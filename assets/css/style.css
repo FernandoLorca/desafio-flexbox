@@ -1,19 +1,19 @@
 :root {
-    --colorWhite: #fff;
-    --colorPlatinum: #e8ebe4;
-    --colorGray: #bec1bb;
-    --colorBlueBell: #a491d2;
-    --colorSoap: #cdc3e6;
-    --colorPaleLavender: #d4dcff;
-    --colorDarkJungle: #1b1f21;
-    --colorOuterSpace: #444749;
-    --colorOldSilver: #828485;
-    --fontTitles: "Poppins", sans-serif;
-    --fontParagraphs: "Open Sans", sans-serif;
-    --textLarge: font-size: 4.5rem;
-    --textMedium: font-size: 1.6rem;
-    --textSmall: font-size: 1.4rem;
-    --textXsmall: font-size: 1rem;
+  --colorWhite: #fff;
+  --colorPlatinum: #e8ebe4;
+  --colorGray: #bec1bb;
+  --colorBlueBell: #a491d2;
+  --colorSoap: #cdc3e6;
+  --colorPaleLavender: #d4dcff;
+  --colorDarkJungle: #1b1f21;
+  --colorOuterSpace: #444749;
+  --colorOldSilver: #828485;
+  --fontTitles: "Poppins", sans-serif;
+  --fontParagraphs: "Open Sans", sans-serif;
+  --textLarge: 4.5rem;
+  --textMedium: 1.6rem;
+  --textSmall: 1.4rem;
+  --textXsmall: 1rem;
 }
 
 html {
@@ -26,6 +26,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   font-family: var(--fontParagraphs);
+  color: var(--colorDarkJungle);
 }
 
 *,
@@ -44,8 +45,49 @@ h4 {
   padding: 0;
 }
 
+p {
+  padding: 0;
+  margin: 0;
+  font-family: var(--fontParagraphs);
+}
+
 .btn-primary {
-    background-color: var(--colorBlueBell);
-    padding: 3.2rem 9.5rem;
-    color: var(--colorWhite);
+  background-color: var(--colorBlueBell);
+  padding: 3.2rem 9.5rem;
+  color: var(--colorWhite);
+}
+
+body {
+  display: flex;
+}
+
+body .rightPannel {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body .rightPannel .rightPannel__logo {
+  max-width: 26rem;
+}
+
+body .rightPannel .rightPannel__logo img {
+  width: 100%;
+}
+
+body .rightPannel .rightPannel__info h1 {
+  text-align: center;
+  font-size: var(--textLarge);
+}
+
+body .rightPannel .rightPannel__info p {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+body .rightPannel .rightPannel__info p span {
+  font-weight: bold;
 }
