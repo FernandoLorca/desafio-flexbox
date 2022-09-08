@@ -62,8 +62,13 @@ p {
 
 .btn-primary {
   background-color: var(--colorBlueBell);
-  padding: 3.2rem 9.5rem;
+  padding: 1rem 5rem;
   color: var(--colorWhite);
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+  background-color: var(--colorSoap);
 }
 
 body {
@@ -77,6 +82,7 @@ body .rightPannel {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #fafafa;
 }
 
 body .rightPannel .rightPannel__logo {
@@ -105,6 +111,7 @@ body .rightPannel .rightPannel__info p span {
 /* Left pannel --------------------------------------- */
 body .leftPannel {
   flex-grow: 2;
+  border-right: 0.1rem solid var(--colorGray);
 }
 body .leftPannel .leftPannel__profile {
   padding: 1rem;
@@ -119,8 +126,8 @@ body .leftPannel .leftPannel__profile .leftPannel__profile-imgTitle {
 }
 
 body .leftPannel .leftPannel__profile .leftPannel__profile-imgTitle img {
-  width: 5rem;
-  border: 2px solid var(--colorGray);
+  width: 4rem;
+  border: 0.1rem solid var(--colorGray);
   border-radius: 50%;
   margin: 0 1rem;
 }
@@ -159,4 +166,64 @@ body
   .leftPannel__profile-icons
   img:last-of-type {
   margin-right: 0rem;
+}
+
+body .leftPannel .leftPannel__newChatBtn {
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.1rem solid var(--colorGray);
+}
+
+body .leftPannel .leftPannel__contactsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+body
+  .leftPannel
+  .leftPannel__contactsWrapper
+  .leftPannel__contactsWrapper-contacts-imgTitle {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.1rem solid var(--colorGray);
+}
+
+body
+  .leftPannel
+  .leftPannel__contactsWrapper
+  .leftPannel__contactsWrapper-contacts-imgTitle:hover {
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+body
+  .leftPannel
+  .leftPannel__contactsWrapper
+  .leftPannel__contactsWrapper-contacts-imgTitle
+  img {
+  width: 5rem;
+  border: 0.1rem solid var(--colorGray);
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+
+body
+  .leftPannel
+  .leftPannel__contactsWrapper
+  .leftPannel__contactsWrapper-contacts-imgTitle
+  .leftPannel__contactsWrapper-contacts-imgTitle-title
+  a {
+  font-size: var(--textSmall);
+}
+
+body
+  .leftPannel
+  .leftPannel__contactsWrapper
+  .leftPannel__contactsWrapper-contacts-imgTitle
+  .leftPannel__contactsWrapper-contacts-imgTitle-title
+  p {
+  font-size: var(--textXsmall);
 }
